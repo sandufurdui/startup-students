@@ -1,0 +1,21 @@
+.lights-toggle{
+    margin-left: 50px;
+}
+
+.pricing-area, .footer-area{
+    background-color: transparent !important;
+}
+
+.call-to-action{
+    background-color: transparent !important;
+}
+
+
+.body-wrap {
+    margin-top: 86px;
+}
+
+.hero{
+    height: calc(100vh - 86px);
+    /* height: 100vh; */
+}
