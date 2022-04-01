@@ -1,0 +1,119 @@
+<style>
+    .eventListbg {
+        background-color: rgba(12, 2, 2, 0.568);
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: 1000;
+    }
+
+    .eventListModal {
+        margin-top: 50px;
+        width: 50%;
+        margin-left: 25%;
+        height: 70%;
+        border-radius: 30px;
+        padding: 40px;
+        background-color: rgb(255, 255, 255) !important;
+    }
+
+    .modal-body {
+        overflow-y: scroll;
+        height: 70%;
+        margin-left: 25px;
+    }
+
+    .event-title {
+        font-size: 25px;
+    }
+
+    .hidden {
+        display: none !important;
+    }
+    .red{
+        color: red !important;
+    }
+</style>
+
+
+<div class="pricing-btn text-center">
+    <button class="main-btn" onclick="show()">vezi toate evenimentele</button>
+</div>
+
+<div id="eventListbg" class="eventListbg grid-container hidden">
+    <div class="eventListModal grid-item" id="eventList">
+        <a class="close close-btn" onclick=hide()>✖</a>
+        <h2 style="text-align: center; margin-bottom: 20px">Event list</h2>
+        <div class="modal-body">
+            <a id="1" class="event-title red" onclick=showEventDetails(this)>Event title</a></br>
+            <a id="2" class="event-title" onclick=showEventDetails(this)>Event title</a></br>
+            <a id="3" class="event-title" onclick=showEventDetails(this)>Event title</a></br>
+        </div>
+    </div>
+
+    <div class="eventListModal grid-item hidden" id="event1">
+        <a style="text-size: 30px" onclick="hideEventDetails(this.parentElement)">
+            back
+        </a>
+        <a class="close" onclick="hide()">✖</a>
+        <h2 style="text-align: center; margin-bottom: 20px">Event title</h2>
+        <!-- <a onclick="print(this.parentElement)">print</a> -->
+        <div class="modal-body1">
+
+            <p>dsagsfdgsfdgsdf</p>
+        </div>
+    </div>
+    <div class="eventListModal grid-item hidden" id="event2">
+        <a style="text-size: 30px" onclick="hideEventDetails(this.parentElement)">
+            back
+        </a>
+        <a class="close" onclick="hide()">✖</a>
+        <h2 style="text-align: center; margin-bottom: 20px">Event title</h2>
+        <!-- <a onclick="print(this.parentElement)">print</a> -->
+        <div class="modal-body1">
+
+            <p>dsagsfdgsfdgsdf</p>
+        </div>
+    </div>
+    <div class="eventListModal grid-item hidden" id="event3">
+        <a style="text-size: 30px" onclick="hideEventDetails(this.parentElement)">
+            back
+        </a>
+        <a class="close" onclick="hide()">✖</a>
+        <h2 style="text-align: center; margin-bottom: 20px">Event title</h2>
+        <!-- <a onclick="print(this.parentElement)">print</a> -->
+        <div class="modal-body1">
+
+            <p>dsagsfdgsfdgsdf</p>
+        </div>
+    </div>
+    
+</div>
+
+
+
+<script>
+    function show() {
+        var element = document.getElementById("eventListbg");
+        element.classList.remove("hidden");
+    }
+    function hide() {
+        var element = document.getElementById("eventListbg");
+        element.classList.add("hidden");
+    }
+
+    function hideEventDetails(elem) {
+        document.getElementById("eventList").classList.remove("hidden");
+        elem.classList.add("hidden");
+    }
+    function showEventDetails(elem) {
+        document.getElementById("eventList").classList.add("hidden");
+        var final = "event" + elem.id;
+        document.getElementById(final).classList.remove("hidden");
+    }
+
+
+
+</script>

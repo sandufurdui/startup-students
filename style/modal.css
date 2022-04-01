@@ -1,0 +1,45 @@
+.eventListbg {
+    background-color: rgba(12, 2, 2, 0.568);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+}
+
+.eventListModal {
+    margin-top: 50px;
+    width: 50%;
+    margin-left: 25%;
+    height: 70%;
+    border-radius: 30px;
+    padding: 40px;
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.modal-body{
+    overflow-y:scroll;
+    height: 70%;
+    margin-left: 25px;
+}
+
+.event-title{
+    font-size: 25px;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.red{
+    color: red !important;
+}
+
+a{
+    cursor: pointer;
+}
+
+a:hover{
+    color: blue !important;    
+}
