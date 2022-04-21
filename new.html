@@ -1,118 +1,89 @@
-<style>
-    .eventListbg {
-        background-color: rgba(12, 2, 2, 0.568);
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        top: 0px;
-        left: 0px;
-        z-index: 1000;
-    }
+<link rel="stylesheet" href="assets/css/style.css">
 
-    .eventListModal {
-        margin-top: 50px;
-        width: 50%;
-        margin-left: 25%;
-        height: 70%;
-        border-radius: 30px;
-        padding: 40px;
-        background-color: rgb(255, 255, 255) !important;
-    }
+<link rel="stylesheet" href="style/modal.css">
 
-    .modal-body {
-        overflow-y: scroll;
-        height: 70%;
-        margin-left: 25px;
-    }
-
-    .event-title {
-        font-size: 25px;
-    }
-
-    .hidden {
-        display: none !important;
-    }
-    .red{
-        color: red !important;
-    }
-</style>
-
-
-<div class="pricing-btn text-center">
-    <button class="main-btn" onclick="show()">vezi toate evenimentele</button>
-</div>
+<section id="pricing" class="pricing-area">
+    <div class="container">
+        <!-- row -->
+    </div> <!-- conteiner -->
+    <div class="pricing-btn text-center">
+        <a class="main-btn" onclick="showProjects()">vezi toate evenimentele</a>
+    </div>
+</section>
 
 <div id="eventListbg" class="eventListbg grid-container hidden">
-    <div class="eventListModal grid-item" id="eventList">
-        <a class="close close-btn" onclick=hide()>✖</a>
-        <h2 style="text-align: center; margin-bottom: 20px">Event list</h2>
+    <div class="eventListModal" id="projectList">
+        <a class="close close-btn" onclick=hideProjects()>✖</a>
+        <h2 style="text-align: center; margin-bottom: 20px">Lista de proiecte</h2>
         <div class="modal-body">
-            <a id="1" class="event-title red" onclick=showEventDetails(this)>Event title</a></br>
-            <a id="2" class="event-title" onclick=showEventDetails(this)>Event title</a></br>
-            <a id="3" class="event-title" onclick=showEventDetails(this)>Event title</a></br>
+            <a id="1" class="event-title" onclick=showProjectDetails(this)>Project 1</a></br>
+            <a id="2" class="event-title" onclick=showProjectDetails(this)>Project 2</a></br>
+            <a id="3" class="event-title" onclick=showProjectDetails(this)>Project 3</a></br>
         </div>
     </div>
 
-    <div class="eventListModal grid-item hidden" id="event1">
-        <a style="text-size: 30px" onclick="hideEventDetails(this.parentElement)">
+    <div class="eventListModal hidden" id="project1">
+        <a style="text-size: 30px" onclick="hideProjectDetails(this.parentElement)">
             back
         </a>
-        <a class="close" onclick="hide()">✖</a>
-        <h2 style="text-align: center; margin-bottom: 20px">Event title</h2>
+        <a class="close invert" onclick="hideProjects()">✖</a>
+        <h2 class="invert" style="text-align: center; margin-bottom: 20px">project 1</h2>
         <!-- <a onclick="print(this.parentElement)">print</a> -->
         <div class="modal-body1">
 
-            <p>dsagsfdgsfdgsdf</p>
+            <p class="invert">hhhhh</p>
         </div>
     </div>
-    <div class="eventListModal grid-item hidden" id="event2">
-        <a style="text-size: 30px" onclick="hideEventDetails(this.parentElement)">
+    <div class="eventListModal hidden" id="project2">
+        <a style="text-size: 30px" onclick="hideProjectDetails(this.parentElement)">
             back
         </a>
-        <a class="close" onclick="hide()">✖</a>
-        <h2 style="text-align: center; margin-bottom: 20px">Event title</h2>
+        <a class="close invert" onclick="hideProjects()">✖</a>
+        <h2 class="invert" style="text-align: center; margin-bottom: 20px">project 2</h2>
         <!-- <a onclick="print(this.parentElement)">print</a> -->
         <div class="modal-body1">
 
-            <p>dsagsfdgsfdgsdf</p>
+            <p class="invert">llllllllllll</p>
         </div>
     </div>
-    <div class="eventListModal grid-item hidden" id="event3">
-        <a style="text-size: 30px" onclick="hideEventDetails(this.parentElement)">
+    <div class="eventListModal hidden" id="project3">
+        <a style="text-size: 30px" onclick="hideProjectDetails(this.parentElement)">
             back
         </a>
-        <a class="close" onclick="hide()">✖</a>
-        <h2 style="text-align: center; margin-bottom: 20px">Event title</h2>
+        <a class="close invert" onclick="hideProjects()">✖</a>
+        <h2 class="invert" style="text-align: center; margin-bottom: 20px">project 3</h2>
         <!-- <a onclick="print(this.parentElement)">print</a> -->
         <div class="modal-body1">
 
-            <p>dsagsfdgsfdgsdf</p>
+            <p class="invert">bbbbbbbbF</p>
         </div>
     </div>
+    
     
 </div>
 
 
-
 <script>
-    function show() {
-        var element = document.getElementById("eventListbg");
-        element.classList.remove("hidden");
-    }
-    function hide() {
-        var element = document.getElementById("eventListbg");
-        element.classList.add("hidden");
-    }
+   function showProjects() {
+    var element = document.getElementById("eventListbg");
+    element.classList.remove("hidden");
+}
 
-    function hideEventDetails(elem) {
-        document.getElementById("eventList").classList.remove("hidden");
-        elem.classList.add("hidden");
-    }
-    function showEventDetails(elem) {
-        document.getElementById("eventList").classList.add("hidden");
-        var final = "event" + elem.id;
-        document.getElementById(final).classList.remove("hidden");
-    }
+function hideProjects() {
+    var element = document.getElementById("eventListbg");
+    element.classList.add("hidden");
+}
+
+function hideProjectDetails(elem) {
+    document.getElementById("projectList").classList.remove("hidden");
+    elem.classList.add("hidden");
+}
+
+function showProjectDetails(elem) {
+    document.getElementById("projectList").classList.add("hidden");
+    var final = "project" + elem.id;
+    document.getElementById(final).classList.remove("hidden");
+}
 
 
 

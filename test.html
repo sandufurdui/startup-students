@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Switch Template</title>
+    <title>Startup students</title>
     <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|IBM+Plex+Sans:600" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.css">
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
@@ -69,10 +69,13 @@
                                         <a class="page-scroll" href="#service">SERVICES</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#pricing">PRICING</a>
+                                        <a class="page-scroll" href="#pricing">Evenimente</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#contact">CONTACT</a>
+                                        <a class="page-scroll" href="#castigatori">Castigatorii</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#sponsori">Sponsori</a>
                                     </li>
                                 </ul>
                             </div>
@@ -225,7 +228,7 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-6">
                             <div class="section-title text-center pb-10">
-                                <h4 class="title">Our Pricing</h4>
+                                <h4 class="title">Evenimente</h4>
                                 <p class="text">Stop wasting time and money designing and managing a website that
                                     doesn’t get results. Happiness guaranteed!</p>
                             </div> <!-- section title -->
@@ -238,16 +241,14 @@
                                     <img src="./assets/images/call-to-action.png"> </br>
                                 </div>
                                 <p>
-                                    Pe scurt: Acesta este un eveniment la care vor asista 25 de medici
-                                    fumati si bauti dar cu dortinta de a trai, de altfel vom fi nevoiti sa murim
-                                    impreuna cu voi
+                                    Pe scurt: aaaaaaaa
                                 </p>
                                 <p>Data: 1.1.0001</p>
                                 <p>Locația: Unde s-a nascut hristos</p>
                                 <p>Durata: 20 de ani</p>
 
                                 <div class="pricing-btn text-center">
-                                    <a class="main-btn">mai multe dătalii</a>
+                                    <a class="main-btn">mai multe detalii</a>
                                 </div>
                                 <div class="buttom-shape">
                                     <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
@@ -304,16 +305,14 @@
                                     <img src="./assets/images/call-to-action.png"> </br>
                                 </div>
                                 <p>
-                                    Pe scurt: Acesta este un eveniment la care vor asista 25 de medici
-                                    fumati si bauti dar cu dortinta de a trai, de altfel vom fi nevoiti sa murim
-                                    impreuna cu voi
+                                    Pe scurt:qqqqqqq
                                 </p>
                                 <p>Data: 1.1.0001</p>
                                 <p>Locația: Unde s-a nascut hristos</p>
                                 <p>Durata: 20 de ani</p>
 
                                 <div class="pricing-btn text-center">
-                                    <a class="main-btn">mai multe dătalii</a>
+                                    <a class="main-btn">mai multe detalii</a>
                                 </div>
                                 <div class="buttom-shape">
                                     <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
@@ -370,16 +369,14 @@
                                     <img src="./assets/images/call-to-action.png"> </br>
                                 </div>
                                 <p>
-                                    Pe scurt: Acesta este un eveniment la care vor asista 25 de medici
-                                    fumati si bauti dar cu dortinta de a trai, de altfel vom fi nevoiti sa murim
-                                    impreuna cu voi
+                                    Pe scurt: 1111111
                                 </p>
                                 <p>Data: 1.1.0001</p>
                                 <p>Locația: Unde s-a nascut hristos</p>
                                 <p>Durata: 20 de ani</p>
 
                                 <div class="pricing-btn text-center">
-                                    <a class="main-btn">mai multe dătalii</a>
+                                    <a class="main-btn">mai multe detalii</a>
                                 </div>
                                 <div class="buttom-shape">
                                     <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
@@ -429,6 +426,7 @@
                                 </div>
                             </div> <!-- single pricing -->
                         </div>
+                        
 
                     </div> <!-- row -->
                 </div> <!-- conteiner -->
@@ -438,76 +436,55 @@
             </section>
 
             <div id="eventListbg" class="eventListbg grid-container hidden">
-                <div class="eventListModal grid-item" id="eventList">
+                <div class="eventListModal" id="eventList">
                     <a class="close close-btn" onclick=hide()>✖</a>
                     <h2 style="text-align: center; margin-bottom: 20px">Event list</h2>
                     <div class="modal-body">
-                        <a id="1" class="event-title red" onclick=showEventDetails(this)>Event 1</a></br>
+                        <a id="1" class="event-title" onclick=showEventDetails(this)>Event 1</a></br>
                         <a id="2" class="event-title" onclick=showEventDetails(this)>Event 2</a></br>
                         <a id="3" class="event-title" onclick=showEventDetails(this)>Event 3</a></br>
                     </div>
                 </div>
             
-                <div class="eventListModal grid-item hidden" id="event1">
+                <div class="eventListModal hidden" id="event1">
                     <a style="text-size: 30px" onclick="hideEventDetails(this.parentElement)">
                         back
                     </a>
-                    <a class="close" onclick="hide()">✖</a>
-                    <h2 style="text-align: center; margin-bottom: 20px">Event 1</h2>
+                    <a class="close invert" onclick="hide()">✖</a>
+                    <h2 class="invert" style="text-align: center; margin-bottom: 20px">Event 1</h2>
                     <!-- <a onclick="print(this.parentElement)">print</a> -->
                     <div class="modal-body1">
             
-                        <p>Acesta este un eveniment la care vor asista 25 de medici fumati si bauti dar cu dortinta de a trai, de altfel vom fi nevoiti sa murim impreuna cu voi</p>
+                        <p class="invert">hhhhh</p>
                     </div>
                 </div>
-                <div class="eventListModal grid-item hidden" id="event2">
+                <div class="eventListModal hidden" id="event2">
                     <a style="text-size: 30px" onclick="hideEventDetails(this.parentElement)">
                         back
                     </a>
-                    <a class="close" onclick="hide()">✖</a>
-                    <h2 style="text-align: center; margin-bottom: 20px">Event 2</h2>
+                    <a class="close invert" onclick="hide()">✖</a>
+                    <h2 class="invert" style="text-align: center; margin-bottom: 20px">Event 1</h2>
                     <!-- <a onclick="print(this.parentElement)">print</a> -->
                     <div class="modal-body1">
             
-                        <p>Acesta este un eveniment la care vor asista 25 de medici fumati si bauti dar cu dortinta de a trai, de altfel vom fi nevoiti sa murim impreuna cu voi</p>
+                        <p class="invert">llllllllllll</p>
                     </div>
                 </div>
-                <div class="eventListModal grid-item hidden" id="event3">
+                <div class="eventListModal hidden" id="event3">
                     <a style="text-size: 30px" onclick="hideEventDetails(this.parentElement)">
                         back
                     </a>
-                    <a class="close" onclick="hide()">✖</a>
-                    <h2 style="text-align: center; margin-bottom: 20px">Event 3</h2>
+                    <a class="close invert" onclick="hide()">✖</a>
+                    <h2 class="invert" style="text-align: center; margin-bottom: 20px">Event 1</h2>
                     <!-- <a onclick="print(this.parentElement)">print</a> -->
                     <div class="modal-body1">
             
-                        <p>Acesta este un eveniment la care vor asista 25 de medici fumati si bauti dar cu dortinta de a trai, de altfel vom fi nevoiti sa murim impreuna cu voi</p>
+                        <p class="invert">bbbbbbbbF</p>
                     </div>
                 </div>
                 
+                
             </div>
-
-            <script>
-                function show() {
-                    var element = document.getElementById("eventListbg");
-                    element.classList.remove("hidden");
-                }
-                function hide() {
-                    var element = document.getElementById("eventListbg");
-                    element.classList.add("hidden");
-                }
-
-                function hideEventDetails(elem) {
-                    document.getElementById("eventList").classList.remove("hidden");
-                    elem.classList.add("hidden");
-                }
-                function showEventDetails(elem) {
-                    document.getElementById("eventList").classList.add("hidden");
-                    var final = "event" + elem.id;
-                    document.getElementById(final).classList.remove("hidden");
-                }
-            </script>
-
 
             <!--====== PRICING PART ENDS ======-->
 
@@ -536,8 +513,221 @@
                     </div> <!-- row -->
                 </div> <!-- container -->
             </section>
-
+            
             <!--====== CALL TO ACTION PART ENDS ======-->
+
+            <section  class="pricing-area">
+                <div class="container">
+                    <div id="castigatori" class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="section-title text-center pb-10">
+                                <h4 class="title">Castigatori</h4>
+                                <!-- <p class="text">Vezi toate poriectele castigatoare</p> -->
+                            </div> <!-- section title -->
+                        </div>
+                    </div> <!-- row -->
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-7 col-sm-9">
+                            <div class="single-pricing mt-40">
+                                <div class="pricing-header text-center">
+                                    <img src="./assets/images/call-to-action.png"> </br>
+                                </div>
+                                <p><b>Denumirea:</b> gshufdsg fhg shfg hf ghsdfgshfdg </p>
+                                <p>
+                                    <b>Descrierea:</b> dddddd
+                                </p>
+                                
+                                <!-- <p><b>Locația:</b> Unde s-a nascut hristos</p> -->
+                                <!-- <p><b>Durata:</b> 20 de ani</p> -->
+
+                                <div class="pricing-btn text-center">
+                                    <a class="main-btn">mai multe detalii</a>
+                                </div>
+                                <div class="buttom-shape">
+                                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 350 112.35">
+                                        <defs>
+                                            <style>
+                                                .color-1 {
+                                                    fill: #2bdbdc;
+                                                    isolation: isolate;
+                                                }
+
+                                                .cls-1 {
+                                                    opacity: 0.1;
+                                                }
+
+                                                .cls-2 {
+                                                    opacity: 0.2;
+                                                }
+
+                                                .cls-3 {
+                                                    opacity: 0.4;
+                                                }
+
+                                                .cls-4 {
+                                                    opacity: 0.6;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <title>bottom-part1</title>
+                                        <g id="bottom-part">
+                                            <g id="Group_747" data-name="Group 747">
+                                                <path id="Path_294" data-name="Path 294" class="cls-1 color-1"
+                                                    d="M0,24.21c120-55.74,214.32,2.57,267,0S349.18,7.4,349.18,7.4V82.35H0Z"
+                                                    transform="translate(0 0)" />
+                                                <path id="Path_297" data-name="Path 297" class="cls-2 color-1"
+                                                    d="M350,34.21c-120-55.74-214.32,2.57-267,0S.82,17.4.82,17.4V92.35H350Z"
+                                                    transform="translate(0 0)" />
+                                                <path id="Path_296" data-name="Path 296" class="cls-3 color-1"
+                                                    d="M0,44.21c120-55.74,214.32,2.57,267,0S349.18,27.4,349.18,27.4v74.95H0Z"
+                                                    transform="translate(0 0)" />
+                                                <path id="Path_295" data-name="Path 295" class="cls-4 color-1"
+                                                    d="M349.17,54.21c-120-55.74-214.32,2.57-267,0S0,37.4,0,37.4v74.95H349.17Z"
+                                                    transform="translate(0 0)" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div> <!-- single pricing -->
+                        </div>
+
+                        <div class="col-lg-4 col-md-7 col-sm-9">
+                            <div class="single-pricing mt-40">
+                                <div class="pricing-header text-center">
+                                    <img src="./assets/images/call-to-action.png"> </br>
+                                </div>
+                                <p><b>Denumirea:</b> gshufdsg fhg shfg hf ghsdfgshfdg </p>
+                                <p>
+                                    <b>Descrierea:</b> dddddd
+                                </p>
+                                
+                                <!-- <p><b>Locația:</b> Unde s-a nascut hristos</p> -->
+                                <!-- <p><b>Durata:</b> 20 de ani</p> -->
+
+                                <div class="pricing-btn text-center">
+                                    <a class="main-btn">mai multe detalii</a>
+                                </div>
+                                <div class="buttom-shape">
+                                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 350 112.35">
+                                        <defs>
+                                            <style>
+                                                .color-1 {
+                                                    fill: #2bdbdc;
+                                                    isolation: isolate;
+                                                }
+
+                                                .cls-1 {
+                                                    opacity: 0.1;
+                                                }
+
+                                                .cls-2 {
+                                                    opacity: 0.2;
+                                                }
+
+                                                .cls-3 {
+                                                    opacity: 0.4;
+                                                }
+
+                                                .cls-4 {
+                                                    opacity: 0.6;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <title>bottom-part1</title>
+                                        <g id="bottom-part">
+                                            <g id="Group_747" data-name="Group 747">
+                                                <path id="Path_294" data-name="Path 294" class="cls-1 color-1"
+                                                    d="M0,24.21c120-55.74,214.32,2.57,267,0S349.18,7.4,349.18,7.4V82.35H0Z"
+                                                    transform="translate(0 0)" />
+                                                <path id="Path_297" data-name="Path 297" class="cls-2 color-1"
+                                                    d="M350,34.21c-120-55.74-214.32,2.57-267,0S.82,17.4.82,17.4V92.35H350Z"
+                                                    transform="translate(0 0)" />
+                                                <path id="Path_296" data-name="Path 296" class="cls-3 color-1"
+                                                    d="M0,44.21c120-55.74,214.32,2.57,267,0S349.18,27.4,349.18,27.4v74.95H0Z"
+                                                    transform="translate(0 0)" />
+                                                <path id="Path_295" data-name="Path 295" class="cls-4 color-1"
+                                                    d="M349.17,54.21c-120-55.74-214.32,2.57-267,0S0,37.4,0,37.4v74.95H349.17Z"
+                                                    transform="translate(0 0)" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div> <!-- single pricing -->
+                        </div>
+
+                        <div class="col-lg-4 col-md-7 col-sm-9">
+                            <div class="single-pricing mt-40">
+                                <div class="pricing-header text-center">
+                                    <img src="./assets/images/call-to-action.png"> </br>
+                                </div>
+                                <p><b>Denumirea:</b> gshufdsg fhg shfg hf ghsdfgshfdg </p>
+                                <p>
+                                    <b>Descrierea:</b> dddddd
+                                </p>
+                                
+                                <!-- <p><b>Locația:</b> Unde s-a nascut hristos</p> -->
+                                <!-- <p><b>Durata:</b> 20 de ani</p> -->
+
+                                <div class="pricing-btn text-center">
+                                    <a class="main-btn">mai multe detalii</a>
+                                </div>
+                                <div class="buttom-shape">
+                                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 350 112.35">
+                                        <defs>
+                                            <style>
+                                                .color-1 {
+                                                    fill: #2bdbdc;
+                                                    isolation: isolate;
+                                                }
+
+                                                .cls-1 {
+                                                    opacity: 0.1;
+                                                }
+
+                                                .cls-2 {
+                                                    opacity: 0.2;
+                                                }
+
+                                                .cls-3 {
+                                                    opacity: 0.4;
+                                                }
+
+                                                .cls-4 {
+                                                    opacity: 0.6;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <title>bottom-part1</title>
+                                        <g id="bottom-part">
+                                            <g id="Group_747" data-name="Group 747">
+                                                <path id="Path_294" data-name="Path 294" class="cls-1 color-1"
+                                                    d="M0,24.21c120-55.74,214.32,2.57,267,0S349.18,7.4,349.18,7.4V82.35H0Z"
+                                                    transform="translate(0 0)" />
+                                                <path id="Path_297" data-name="Path 297" class="cls-2 color-1"
+                                                    d="M350,34.21c-120-55.74-214.32,2.57-267,0S.82,17.4.82,17.4V92.35H350Z"
+                                                    transform="translate(0 0)" />
+                                                <path id="Path_296" data-name="Path 296" class="cls-3 color-1"
+                                                    d="M0,44.21c120-55.74,214.32,2.57,267,0S349.18,27.4,349.18,27.4v74.95H0Z"
+                                                    transform="translate(0 0)" />
+                                                <path id="Path_295" data-name="Path 295" class="cls-4 color-1"
+                                                    d="M349.17,54.21c-120-55.74-214.32,2.57-267,0S0,37.4,0,37.4v74.95H349.17Z"
+                                                    transform="translate(0 0)" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div> <!-- single pricing -->
+                        </div>
+
+                    </div> <!-- row -->
+                </div> <!-- conteiner -->
+                <div class="pricing-btn text-center">
+                    <a class="main-btn" onclick="show()">vezi toate proiectele</a>
+                </div>
+            </section>
 
             <!--====== CONTACT PART START ======-->
 
@@ -726,6 +916,8 @@
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
     <script src="dist/js/main.min.js"></script>
+
+    <script src="custom.js"></script>
 </body>
 
 </html>

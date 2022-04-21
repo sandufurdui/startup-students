@@ -43,3 +43,7 @@ a{
 a:hover{
     color: blue !important;    
 }
+
+/* .invert{
+    filter: invert(100%);
+} */
